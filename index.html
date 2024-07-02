@@ -11,55 +11,57 @@
     <div class="navigation">
         <ul>
             <li class="list active">
-                <a href="">
+                <a href="#">
                     <span class="icon"> 
                         <i class="bi bi-house-door"></i>
-                        <span class="text">Home</span>
                     </span>
+                    <span class="text">Home</span>
                 </a>
             </li>
             <li class="list">
-                <a href="">
+                <a href="#">
                     <span class="icon"> 
                         <i class="bi bi-person"></i>
-                        <span class="text">Profile</span>
                     </span>
+                    <span class="text">Profile</span>
                 </a>
             </li>
             <li class="list">
-                <a href="">
+                <a href="#">
                     <span class="icon"> 
                         <i class="bi bi-camera"></i>
-                        <span class="text">Photos</span>
                     </span>
+                    <span class="text">Photos</span>
                 </a>
             </li>
             <li class="list">
-                <a href="">
+                <a href="#">
                     <span class="icon"> 
                         <i class="bi bi-chat-dots-fill"></i>
-                        <span class="text">Message</span>
                     </span>
+                    <span class="text">Message</span>
                 </a>
             </li>
             <li class="list">
-                <a href="">
+                <a href="#">
                     <span class="icon"> 
                         <i class="bi bi-gear"></i>
-                        <span class="text">Settings</span>
                     </span>
+                    <span class="text">Settings</span>
                 </a>
             </li>
-        <div class="indicator"></div>
+            <div class="indicator"></div>
         </ul>
     </div>
     <script>
-  const list=document.querySelectorAll(".list");
-  function activeLik(){
-    list.forEach((item)=> item.classList.remove("active"));
-  this.classList.add("active")
-}
-list.forEach((item)=> item.addEventListener("click",activeLik))
+        const list = document.querySelectorAll(".list");
+
+        function activateLink() {
+            list.forEach((item) => item.classList.remove("active"));
+            this.classList.add("active");
+        }
+
+        list.forEach((item) => item.addEventListener("click", activateLink));
     </script>
 </body>
 </html>
